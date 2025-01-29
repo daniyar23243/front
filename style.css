@@ -19,7 +19,7 @@
     position: fixed;
 }
 
-#navbar_logo{
+#navbar-logo{
     color: #0ce48d;
     cursor: pointer;
     text-decoration: none;
@@ -85,7 +85,7 @@
     display: none;
 }
 
-@media screen and (max-wdith: 900px) {
+@media screen and (max-width: 900px) {
     .navbar__toggle{
         display: block;
         position: absolute;
