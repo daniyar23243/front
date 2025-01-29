@@ -21,7 +21,7 @@
 
 #navbar_logo{
     color: #0ce48d;
-    courser: pointer;
+    cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
 }
@@ -68,7 +68,7 @@
     background: #0ce48d;
     padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 4px;
     color: #fff;
     text-decoration: none;
     display: flex;
@@ -84,4 +84,49 @@
 .navbar__toggle{
     display: none;
 }
+
+@media screen and (max-wdith: 900px) {
+    .navbar__toggle{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        z-index: 10;
+        font-size: 1.5rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 80px);
+        opacity: 0;
+        transition: all 0.3s ease;
+        background: #131313;
+        z-index: 10;
+        margin: 0;
+    }
+
+    .navbar__menu.active{
+        left: 0;
+        opacity: 1;
+    }
+    .navbar__item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 
