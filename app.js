@@ -4,5 +4,8 @@ const menuLinks = document.querySelector('.navbar__menu');
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
-    console.log('it works');
 });
+
+//LOgos movement
+const logos = document.querySelector('.rotating-logos__track').cloneNode(true);
+document.querySelector('.rotating-logos').appendChild(logos);
