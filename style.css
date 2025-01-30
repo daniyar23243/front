@@ -287,4 +287,84 @@
         transform: translateX(-100%);
     }
 }
+/*WHY CHOOSE US*/
+
+.why-choose-us{
+    background-color: #0abf77;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+
+.why-choose-us .intro-text{
+   font-size: 2rem;
+   color: #fff;
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1000px;   
+}
+
+.feature-grid{
+    padding-top: 20px;
+    display: flex;
+   flex-wrap: wrap; 
+   justify-content: center;
+   gap: 24px;
+}
+
+
+.feature-item{
+    background-color: #000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 300px;
+}
+
+.feature-item i.icon{
+    line-height: normal !important;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.feature-item h3{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.feature-item p{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 600px){
+    .features-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-item{
+        width: 100%;
+    }
+    .why-choose-us .intro-text{
+        font-size: 1.5rem;
+    }
+}
+
+.feature-item:hover{
+    background-color: #141414;
+    transition: all 0.3s ease;
+    transform: translateY(-3px);
+
+}
 
