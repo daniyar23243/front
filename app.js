@@ -9,3 +9,22 @@ menu.addEventListener('click', function() {
 //LOgos movement
 const logos = document.querySelector('.rotating-logos__track').cloneNode(true);
 document.querySelector('.rotating-logos').appendChild(logos);
+
+//function to toggle monthly/yearly pricing
+
+function switchPricing() {
+    const checkbox = document.getElementById('pricing-toggle-checkbox');
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const yearlyPrices = document.querySelectorAll('.yearly-price');
+    const yearlyDiscounts = document.querySelector('.save-percentage');
+    if (checkbox.checked) {
+        monthlyPrices.forEach(price => price.classList.add('hidden'));
+        yearlyPrices.forEach(price => price.classList.remove('hidden'));
+        yearlyDiscounts.style.display = 'inline';
+    }
+    else {
+        monthlyPrices.forEach(price => price.classList.remove('hidden'));
+        yearlyPrices.forEach(price => price.classList.add('hidden'));
+        yearlyDiscounts.style.display = 'none';
+    }
+}

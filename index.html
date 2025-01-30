@@ -91,26 +91,111 @@
                     <div class="feature-item">
                         <i class="fa-solid fa-chart-simple icon"></i>    
                         <h3>AI-powered insights</h3>                   
-                        <p>We prioritize your financial security with end-to-end encyrption, 
-                            ensuring your data is protected.</p>
+                        <p>Unlock valuable financial trends and predictions using cutting-edge AI technology, empowering you to make informed decisions securely.</p>
                     </div>
                     <div class="feature-item">
                         <i class="fa-solid fa-user icon"></i>
                         <h3>Users friendly Interface</h3>
-                        <p>We prioritize your financial security with end-to-end encyrption, 
-                            ensuring your data is protected.</p>
+                        <p>Enjoy a simple and intuitive platform designed for effortless navigation, making financial management easy and efficient.</p>
                     </div>
                         <div class="feature-item">
                             <i class="fa-solid fa-gauge-simple-high icon"></i>   
                              <h3>Real-time Data</h3>
-                            <p>We prioritize your financial security with end-to-end encyrption, 
-                            ensuring your data is protected.</p>
+                            <p>Stay updated with instantaneous data updates, enabling you to react quickly and efficiently to changes in your financial landscape.</p>
                         </div>
                  </div>
             </div>
         </section>
 
-     </main>
+        <!-- Pricing Section-->
+        <section class="services">
+            <h2>Choose the right plan for you</h2>
+            <!-- Pricing Button -->
+             <div class="pricing-toggle">
+                <div class="toggle-container">
+                <span class="toggle-option">Monthly</span>
+                <label  class="switch">
+                    <input 
+                    type="checkbox" 
+                    id="pricing-toggle-checkbox" 
+                    onclick="switchPricing()">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-option">Yearly</span>    
+                </div>
+                <div class="save-percentage-container">
+                     <span class="save-percentage">Save 20%</span>
+                </div>
+            </div>   
+             <div class="services__container">
+                    <!-- Basic Plan -->
+                 <div class="services__card">
+                    <div class="card-content">
+                        <h3>Basic Plan</h3>
+                        <div class="card-price">
+                            <p class="price monthly-price">10$/mo</p>
+                            <p class="price yearly-price hidden">8$/mo</p>
+                            <a href="/signup.html" class="price-btn">Get started</a>
+                            <p class="small-desc">Everything you need to start</p>
+                        </div>
+                        <div class="card-features">
+                            <p>Features:</p>
+                            <ul>
+                                <li>Acces to basic features</li>
+                                <li>Digital Checking Accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+
+                    <!-- Standart Plan -->
+                    <div class="services__card">
+                        <div class="card-content">
+                            <h3>Standart Plan</h3>
+                            <div class="card-price">
+                                <p class="price monthly-price">30$/mo</p>
+                                <p class="price yearly-price hidden">24$/mo</p>
+                                <a href="/signup.html" class="price-btn">Get started</a>
+                                <p class="small-desc">Perfect for individuals looking to take control of their finances</p>
+                            </div>
+                            <div class="card-features">
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Unlimited Transactions</li>
+                                    <li>Free ATM Withdrawals</li>
+                                    <li>Free Debit Card</li>
+                                    <li>24/7 Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
+
+                    <!-- Premium Plan -->
+                    <div class="services__card">
+                        <div class="card-content">
+                            <h3>Premium Plan</h3>
+                            <div class="card-price">
+                                <p class="price monthly-price">50$/mo</p>
+                                <p class="price yearly-price hidden">40$/mo</p>
+                                <a href="/signup.html" class="price-btn">Get started</a>
+                                <p class="small-desc">Ideal for investors and advanced users</p>
+                            </div>
+                            <div class="card-features">
+                                <p>Features:</p>
+                                <ul>
+                                    <li>Access to Standart features</li>
+                                    <li>Customizable Budgets</li>
+                                    <li>AI-powered Financial insights</li>
+                                    <li>Investments Managment</li>
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
+
+
+             </div>
+        </section>    
+    </main>
 
 
     <script src="app.js"></script>
