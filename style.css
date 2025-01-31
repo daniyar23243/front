@@ -6,6 +6,11 @@
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 .navbar__container{
     display: flex;
     justify-content: space-between;
@@ -342,6 +347,10 @@
     margin-bottom: 50px;
 }
 
+.feature-item:hover i.icon, .feature-item:hover h3 {
+    color: #0ce48d;
+}
+
 .feature-item h3{
     font-size: 1.5rem;
     color: #fff;
@@ -375,6 +384,8 @@
     border-radius: 25px;
 
 }
+
+
 
 /*PRICING PLANS*/
 .services{
